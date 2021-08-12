@@ -45,10 +45,16 @@ namespace Clase_Teorica
                 inc++;
             } while (10 < numbers.Length);
 
-            Console.WriteLine("IMPRIME CON FOR");
-                for (int j = 0; j < numbers.Length; j++) 
+            Console.WriteLine("IMPRIME CON FOR-ARREGLO ORDENADO");
+            //Llamado a la clase Array y al metodo sorf
+           //ordena los valores
+            Array.Sort(numbers);
+
+            for (int j = 0; j < numbers.Length; j++) 
             {
                 Console.WriteLine("Posicion {0} : {1}", j, numbers[j]);
+               //invierte los valores
+                Array.Reverse(numbers);
             }
 
             Console.WriteLine("Imprime elementos con FOREACH");
@@ -59,5 +65,7 @@ namespace Clase_Teorica
         }
         //Escribir un ciclo que permita capturar los valores
         //a almacenar en el arreglo de numbers con un tamaño de 10
+    //2- Calcular el promedio de los numeros almacenados en el array
     }
+    //Console.WriteLine("El valor promedio es de: {0}")
 }

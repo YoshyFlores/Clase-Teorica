@@ -25,6 +25,8 @@ namespace Clase_Teorica
                 int[] arraynumbers = new int[10];
 
                 int x = 0;
+                int sumatoria=0;
+                int promedio = 0;
                 //Se pretende que el usuario introduzca los datos
                 while (x < arraynumbers.Length)
                 {
@@ -38,12 +40,23 @@ namespace Clase_Teorica
                 //Se mostraran los datos que el usuario ha ingresado
 
                 int j = 0;
+                
                 Console.WriteLine(" Datos ingresados, utilizando el ciclo While:");
                 while (j < arraynumbers.Length)
                 {
                     Console.WriteLine(arraynumbers[j]);
                     j++;
+                
+
+                   // sumatoria = (sumatoria + j);
+                    promedio = sumatoria / x;
+
+                    //promedio = sumatoria / j;
+                   sumatoria += arraynumbers[j];
                 }
+                
+                Console.WriteLine("El valor promedio es de: {0}", sumatoria);
+
             }
 
         }
