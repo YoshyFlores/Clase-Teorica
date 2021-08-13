@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clase_Teorica
 {
+    //Ejercicio 3
     class Diccionario
     {
         static void Main(string[] args)
